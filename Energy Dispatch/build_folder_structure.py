@@ -1,5 +1,6 @@
 import os
 
+os.mkdir('plots')
 os.mkdir('results')
 os.mkdir('results/mle')
 os.mkdir('results/mle/myopic_stupid')

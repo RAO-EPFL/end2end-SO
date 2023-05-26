@@ -6,7 +6,7 @@ This repository contains the code for the experiments presented in the paper _En
 [Paper Link](PLACEHOLDER) | [ICML 2023](https://icml.cc)
 
 ## Dependencies and Installation
-The code is written in Python. All required packages can be found in the `requirements.txt` file. To install the dependencies, run the following command:
+The code is written in Python. All required packages can be found in the `requirements.txt` file, we use Python 3.9.12 for our experiments. To install the dependencies, run the following command:
 
 ```
 pip install -r requirements.txt

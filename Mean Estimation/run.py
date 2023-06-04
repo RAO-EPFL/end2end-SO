@@ -73,11 +73,11 @@ def test_net(net, name):
 
 def trainNet(lossf):
     net = Net()
-    EPOCHS = int(2e4)
+    EPOCHS = int(5e4)
     prior_mean = 2.
     prior_std = 0.5
     likelihood_std = std
-    optimizer = optim.Adam(net.parameters(),  lr=0.0001)
+    optimizer = optim.Adam(net.parameters(),  lr=0.00005)
     losses = []
 
     for i in tqdm(range(EPOCHS)):
@@ -86,7 +86,7 @@ def trainNet(lossf):
         optimizer.zero_grad()   # zero the gradient buffers
         samples = torch.normal(mean=mean, std=likelihood_std * torch.ones((100, N)))
         pred = net(samples)
-        loss = lossf(pred, mean, samples)
+        loss = lossf(pred, torch.normal(mean=mean, std=likelihood_std*torch.ones((100, 1))), samples)
         loss.backward()
         optimizer.step()
         losses.append(loss.detach().item())

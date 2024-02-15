@@ -26,12 +26,13 @@ Instructions on how to run the code for each experiment can be found in the corr
 If you use our code or findings in your research, please cite our paper as follows:
 
 ```
-@inproceedings{AAA,
-    author = {Rychener, Yves and Kuhn, Daniel and Sutter, Tobias},
-    title = {End-to-End Learning for Stochastic Optimization: A Bayesian Perspective},
-    booktitle = {International Conference on Machine Learning},
-    pages={PLACEHOLDER},
-    year = {2023},
+@inproceedings{rychener2023end2end,
+  title={End-to-end learning for stochastic optimization: A bayesian perspective},
+  author={Rychener, Yves and Kuhn, Daniel and Sutter, Tobias},
+  booktitle={International Conference on Machine Learning},
+  pages={29455--29472},
+  year={2023},
+  organization={PMLR}
 }
 ```
 
